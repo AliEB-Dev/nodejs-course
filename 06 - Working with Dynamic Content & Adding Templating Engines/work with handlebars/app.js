@@ -4,6 +4,7 @@ const {engine} = require("express-handlebars");
 const path = require("path");
 const app = express();
 
+
 app.engine("hbs",engine({
     layoutsDir: path.join(__dirname, "views", "layouts"),
     defaultLayout : 'main-layout',
@@ -11,7 +12,6 @@ app.engine("hbs",engine({
   }));
 app.set("view engine","hbs");
 app.set('views','views')
-// app.set("view engine",'pug');
 const adminData = require('./routes/admin');
 const shopRoutes = require('./routes/shop');
 

@@ -10,9 +10,6 @@ router.get('/',(req,res)=>{
         prods:product,
         pageTitle:'Shop Page',
         path:'/',
-        hasProducts : product.length > 0,
-        activeShop : true,
-        productCSS : true,
     })
 })
 
